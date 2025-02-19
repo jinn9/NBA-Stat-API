@@ -9,7 +9,7 @@ import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.ToString;
 
-import java.time.LocalDateTime;
+import java.time.LocalDate;
 
 @Entity
 @Getter
@@ -26,5 +26,5 @@ public class Player {
     private int height;
     private int weight;
     private String college;
-    private LocalDateTime birthDate;
+    private LocalDate birthDate;
 }

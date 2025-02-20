@@ -16,4 +16,8 @@ public class Team {
     @Column(name = "team_id")
     private Long id;
     private String name;
+
+    public Team(String name) {
+        this.name = name;
+    }
 }

@@ -1,6 +1,6 @@
 package com.github.jinn9.nba_api.controller;
 
-import com.github.jinn9.nba_api.dto.PlayerStatWithPlayerAndTeamDto;
+import com.github.jinn9.nba_api.dto.PlayerStatDto;
 import com.github.jinn9.nba_api.repository.PlayerStatRepository;
 import lombok.RequiredArgsConstructor;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -18,10 +18,10 @@ public class PlayerStatController {
     private final PlayerStatRepository playerStatRepository;
 
     @GetMapping
-    public Response<List<PlayerStatWithPlayerAndTeamDto.Response>> getPlayerStats() {
-        List<PlayerStatWithPlayerAndTeamDto.Response> playerStats = playerStatRepository.findAllWithPlayerAndTeam()
+    public Response<List<PlayerStatDto.Response>> getPlayerStats() {
+        List<PlayerStatDto.Response> playerStats = playerStatRepository.findAllWithPlayerAndTeam()
                 .stream()
-                .map(PlayerStatWithPlayerAndTeamDto.Response::new)
+                .map(PlayerStatDto.Response::new)
                 .collect(Collectors.toList());
 
         return new Response<>(playerStats);

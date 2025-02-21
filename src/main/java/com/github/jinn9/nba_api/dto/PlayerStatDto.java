@@ -1,14 +1,11 @@
 package com.github.jinn9.nba_api.dto;
 
-import com.fasterxml.jackson.databind.PropertyNamingStrategies;
-import com.fasterxml.jackson.databind.annotation.JsonNaming;
 import com.github.jinn9.nba_api.entity.PlayerStat;
 import lombok.Data;
 
 public class PlayerStatDto {
 
         @Data
-        @JsonNaming(PropertyNamingStrategies.SnakeCaseStrategy.class)
         public static class Response {
                 private int season;
                 private String firstName;

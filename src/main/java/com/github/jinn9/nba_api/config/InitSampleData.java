@@ -39,7 +39,7 @@ public class InitSampleData {
             Team team1 = new Team("Chicago Bulls");
             em.persist(team1);
 
-            PlayerStat stat1 = new PlayerStat(1996, player1, team1, "SG", 32,
+            PlayerStat stat1 = new PlayerStat("1996", player1, team1, "SG", 32,
                     11, 82, 82, 3090, 916, 1850, 0.495, 111, 260,
                     0.427, 805, 1590, 0.506, 0.525, 548, 657,
                     0.834, 148, 395, 543, 352, 180, 42, 197, 195, 2491);
@@ -53,7 +53,7 @@ public class InitSampleData {
             Team team2 = new Team("Philadelphia 76ers");
             em.persist(team2);
 
-            PlayerStat stat2 = new PlayerStat(2001, player2, team2, "SG", 25, 5, 71,
+            PlayerStat stat2 = new PlayerStat("2001", player2, team2, "SG", 25, 5, 71,
                     71, 2979, 762, 1813, 0.42, 98, 306, 0.32, 664,
                     1507, 0.441, 0.447, 585, 719, 0.814, 50, 223,
                     273, 325, 178, 20, 237, 147, 2207);
@@ -66,7 +66,7 @@ public class InitSampleData {
             Team team3 = new Team("Los Angeles Lakers");
             em.persist(team3);
 
-            PlayerStat stat3 = new PlayerStat(2000, player3, team3, "C", 27, 8, 79,
+            PlayerStat stat3 = new PlayerStat("2000", player3, team3, "C", 27, 8, 79,
                     79, 3163, 956, 1665, 0.574, 0, 1, 0, 956, 1664,
                     0.575, 0.574, 432, 824, 0.524, 336, 742, 1078,
                     299, 36, 239, 223, 255, 2344);
@@ -79,7 +79,7 @@ public class InitSampleData {
             Team team4 = new Team("Minnesota Timberwolves");
             em.persist(team4);
 
-            PlayerStat stat4 = new PlayerStat(1999, player4, team4, "PF", 22, 4, 47,
+            PlayerStat stat4 = new PlayerStat("1999", player4, team4, "PF", 22, 4, 47,
                     47, 1780, 414, 900, 0.46, 4, 14, 0.286, 410,
                     886, 0.463, 0.462, 145, 206, 0.704, 166, 323,
                     489, 202, 78, 83, 135, 152, 977);
@@ -92,7 +92,7 @@ public class InitSampleData {
             Team team5 = new Team("Phoenix Suns");
             em.persist(team5);
 
-            PlayerStat stat5 = new PlayerStat(2005, player5, team5, "PG", 30, 9, 75,
+            PlayerStat stat5 = new PlayerStat("2005", player5, team5, "PG", 30, 9, 75,
                     75, 2573, 430, 857, 0.502, 94, 218, 0.431, 336,
                     639, 0.526, 0.557, 211, 238, 0.887, 57, 192,
                     249, 861, 74, 6, 245, 136, 1165);

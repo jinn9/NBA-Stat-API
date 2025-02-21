@@ -18,10 +18,10 @@ public class PlayerStatController {
     private final PlayerStatRepository playerStatRepository;
 
     @GetMapping
-    public Response<List<PlayerStatWithPlayerAndTeamDto>> getPlayerStats() {
-        List<PlayerStatWithPlayerAndTeamDto> playerStats = playerStatRepository.findAllWithPlayerAndTeam()
+    public Response<List<PlayerStatWithPlayerAndTeamDto.Response>> getPlayerStats() {
+        List<PlayerStatWithPlayerAndTeamDto.Response> playerStats = playerStatRepository.findAllWithPlayerAndTeam()
                 .stream()
-                .map(PlayerStatWithPlayerAndTeamDto::new)
+                .map(PlayerStatWithPlayerAndTeamDto.Response::new)
                 .collect(Collectors.toList());
 
         return new Response<>(playerStats);

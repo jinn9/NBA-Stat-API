@@ -7,7 +7,7 @@ import org.springframework.data.jpa.repository.Query;
 
 import java.util.List;
 
-public interface PlayerStatRepository extends JpaRepository<PlayerStat, Long> {
+public interface PlayerStatRepository extends JpaRepository<PlayerStat, Long>, PlayerStatRepositoryCustom {
 
     @Query("select ps from PlayerStat ps")
     @EntityGraph(attributePaths = {"player", "team"})

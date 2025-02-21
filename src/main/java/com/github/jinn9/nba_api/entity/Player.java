@@ -25,6 +25,11 @@ public class Player {
     private String college;
     private LocalDate birthDate;
 
+    public Player(String firstName, String lastName) {
+        this.firstName = firstName;
+        this.lastName = lastName;
+    }
+
     public Player(String firstName, String lastName, String position, int height, int weight,
                   String college, LocalDate birthDate) {
         this.firstName = firstName;

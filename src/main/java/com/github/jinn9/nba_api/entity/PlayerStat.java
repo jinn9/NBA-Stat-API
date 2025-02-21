@@ -55,6 +55,13 @@ public class PlayerStat {
     private int pf;
     private int pts;
 
+    public PlayerStat(String season, Player player, Team team, String position) {
+        this.season = season;
+        this.player = player;
+        this.team = team;
+        this.position = position;
+    }
+
     public PlayerStat(String season, Player player, Team team, String position, int age, int experience, int gp, int gs,
                       int mp, int fg, int fga, double fgPercent, int x3p, int x3pa, double x3pPercent, int x2p,
                       int x2pa, double x2pPercent, double eFgPercent, int ft, int fta, double ftPercent, int orb,

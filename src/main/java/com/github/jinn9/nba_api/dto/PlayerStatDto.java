@@ -6,8 +6,17 @@ import lombok.Data;
 public class PlayerStatDto {
 
         @Data
+        public static class Request {
+                private String season;
+                private String firstName;
+                private String lastName;
+                private String team;
+                private String position;
+        }
+
+        @Data
         public static class Response {
-                private int season;
+                private String season;
                 private String firstName;
                 private String lastName;
                 private String team;
